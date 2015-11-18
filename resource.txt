@@ -1,0 +1,4 @@
+# This is a comment
+server=172.17.19.222
+calling="Aseem" <sip:aseem@yahoo.com>
+called="Kavita" <sip:kavita@ymail.com>
