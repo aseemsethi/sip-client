@@ -1,4 +1,11 @@
 # This is a comment
+Client
 server=172.17.19.222
+calledUri=sip:kavita@ymail.com
 calling="Aseem" <sip:aseem@yahoo.com>
 called="Kavita" <sip:kavita@ymail.com>
+Client
+server=172.17.19.222
+calledUri=sip:pallavi@ymail.com
+calling="Dhruv" <sip:dhruv@yahoo.com>
+called="Pallavi" <sip:pallavi@ymail.com>

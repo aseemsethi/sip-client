@@ -86,7 +86,7 @@ def sipParser(client, data):
         # Check for Media Parameters
         for letters in word.split("="):
           if letters in ['v','o','s','c','t','m','a']:
-            print "Media:", letters, "in", line
+            logging.debug("Media:", letters, "in", line)
             break
       
 
@@ -97,7 +97,7 @@ def recvThread(conn):
     readable, writable, exceptional = \
                         select.select(socketInputs, [], [])
     for s in readable:
-      data = s.recv(512)
+      data = s.recv(1024)
       # retrive the client pointer from sock looking up the Dict
       sipParser(socketClient[s], data)
   
@@ -127,6 +127,7 @@ def addMandatoryHdrs(client, type):
   # CSeq increments for every request from client (Except ACK, CANCEL)
   # For new requests, registger and Bye - cseq is incremented
   CSeq = 'CSeq: ' + str(client.seq) + ' ' + type +'\r\n'
+  client.seq = client.seq+1
   # The Call-ID is a unique identifier to group together messages.
   # It MUST be the same for all requests and responses sent by either UA
   # in a dialog.  It SHOULD be the same in each registration from a UA.
@@ -143,23 +144,23 @@ def sendRegister(client, event):
   Start = 'REGISTER sip:'+client.conn.sipServer+' SIP/2.0\r\n'
   To = 'To: ' + str(client.calling) + '\r\n'
   Allow = 'Allow: INVITE,ACK,OPTIONS,BYE,CANCEL,SUBSCRIBE,NOTIFY,REFER,'+\
-          'MESSAGE,INFO,PING'
+          'MESSAGE,INFO,PING\r\n'
   addMandatoryHdrs(client, 'REGISTER')
-  client.pkt = Start + To + client.pkt + Allow
+  client.pkt = Start + To + client.pkt + Allow + '\r\n'
   client.conn.send(client.pkt)
   return "OK"
 
 def registerOK(client, event):
-  print "Register OK recvd"
+  print "Register OK recvd for client %s", client.params['calling']
   sendInvite(client)
   return "OK"
 
 def inviteResp(client, event):
   if event == "RINGING":
-    print "RINGING recvd."
+    print "RINGING recvd. for client %s", client.params['calling']
     return "NO-STATE-CHANGE"
   elif event == "OK":
-    print "Invite OK recvd"
+    print "Invite OK recvd for client %s", client.params['calling']
     return "OK"
 
 def addSDP(client):
@@ -177,18 +178,19 @@ def addSDP(client):
   sdp =  sdp + "a=rtpmap:34 h263/90000\r\n"
   sdp =  sdp + "a=fmtp:34 QCIF=2\r\n"
   sdp =  sdp + "a=sendrecv\r\n"
-  client.pkt = client.pkt + sdp
+  return sdp
 
 def sendInvite(client):
   print "Send Invite"
-  Start = 'INVITE sip:'+str(client.called)+' SIP/2.0\r\n'
+  Start = 'INVITE '+client.params['calledUri']+' SIP/2.0\r\n'
   # To has logical recipient of the request. Allows for Display Name
   To = 'To: ' + str(client.called) + '\r\n'
   addMandatoryHdrs(client, 'INVITE')
   cl = "Content-Length: 200\r\n"
   ct = "Content-Type: application/sdp\r\n"
-  client.pkt = Start + To + client.pkt + cl + ct
-  addSDP(client)
+  client.pkt = Start + To + client.pkt + cl + ct + '\r\n'
+  sdp = addSDP(client)
+  client.pkt = client.pkt + sdp
   client.conn.send(client.pkt)
   return "INVITE-SENT"
   
@@ -222,6 +224,7 @@ class FSM:
 
 def sipStart(params):
   conn = None
+  print "\nSIPStart with Params:", params
   client = Client(params)
   # send a pkt so that sock is valid, and recv in recvThread
   # does not give an error. Socket doesn't have an address untill its
@@ -237,27 +240,39 @@ def sipStart(params):
 '''
 Set some default values for params coming from resource.txt file
 Syntax: name=value1 value2
+clients[]] is an array of Dict items of all params for a particular client.
+e.g.: Clients:
+[{'calling': '"Aseem" <sip:aseem@yahoo.com>', 'Client': '',
+   'called': '"Kavita" <sip:kavita@ymail.com>', 'server': '172.17.19.222'
+ },
+ {'calling': '"Dhruv" <sip:dhruv@yahoo.com>', 'Client': '',
+  'called': '"Pallavi" <sip:pallavi@ymail.com>', 'server': '172.17.19.222'
+ }
+]
 '''
 def loadParams():
   params = {}
-  sipServer = '192.168.2.7'
-  # Address: "Display Name" + <SIP URI>
-  calling = 'ABC' + ' ' + '<sip:abc@yahoo.com>'  
-  called  = 'DEF' + ' ' + '<sip:def@yahoo.com>'  # of type Address
+  clients = []
   with open("resource.txt", "r") as f:
     for line in f:
       nameValue = re.split(r'[=, \r\n]', line)
       name = nameValue[0]
-      if name == "#": continue   # Ignore lines starting with #
+      if re.search('^#', name):
+        continue   # Ignore lines starting with #
+      if name == "Client":
+        params = {}
+        clients.append(params)
       value = nameValue[1]
       for i in range(2, len(nameValue)):
         value = value + ((" " + nameValue[i]) if nameValue[i] else '')
       params[name] = value
-  return params
+  print "\nClients:", clients
+  return clients
 
 if __name__ == '__main__':
   logging.basicConfig(format='%(asctime)s (%(threadName)-10s) \
               %(message)s', level=logging.WARN)
-  params = loadParams()
-  print params
-  sipStart(params)
+  clients = loadParams()
+  sipStart(clients[0])
+  sipStart(clients[1])
+
