@@ -11,6 +11,8 @@ import logging, re
 import socket, select
 import sys, threading, time
 import select, random
+import cmd
+import platform
 
 socketInputs = []
 socketClient = {}
@@ -25,7 +27,7 @@ class Connect():
       sys.exit()
   def send(self, data):
     self.sock.sendto(data, self.address)
-  def recv(self, size):
+  def recv123(self, size):
     dataR, serverR = self.sock.recvfrom(512)
     return dataR,serverR
 
@@ -49,10 +51,10 @@ def sipParser(client, data):
   # Get the Message Start Line
   splitdata = data.split("\n")
   if "OK" in splitdata[0]:
-    print splitdata[0]
+    logging.debug(splitdata[0])
     client.FSM.run("OK")
   elif "RINGING" in splitdata[0]:
-    print splitdata[0]
+    logging.debug(splitdata[0])
     client.FSM.run("RINGING")
   else:
     print "Other Message"
@@ -63,7 +65,7 @@ def sipParser(client, data):
         logging.debug("CSeq:", line)
         break
       if word == "To:":
-        logging.debug("CSeq:", line)
+        logging.debug("To:", line)
         break
       elif word == "From:":
         logging.debug("From:", line)
@@ -87,12 +89,11 @@ def sipParser(client, data):
         for letters in word.split("="):
           if letters in ['v','o','s','c','t','m','a']:
             logging.debug("Media:", letters, "in", line)
-            break
-      
+            break    
 
 def recvThread(conn):
   global socketClient
-  logging.debug('Recv Thread')
+  logging.warn('Recv Thread')
   while True:
     readable, writable, exceptional = \
                         select.select(socketInputs, [], [])
@@ -103,7 +104,6 @@ def recvThread(conn):
   
   while True:
     try:
-      #data, server = conn.recv(1024)
       data, server = conn.sock.recvfrom(512)
       sipParser(conn, data)
     except Exception, e:
@@ -127,7 +127,10 @@ def addMandatoryHdrs(client, type):
   # CSeq increments for every request from client (Except ACK, CANCEL)
   # For new requests, registger and Bye - cseq is incremented
   CSeq = 'CSeq: ' + str(client.seq) + ' ' + type +'\r\n'
-  client.seq = client.seq+1
+  if type != "ACK":
+    client.seq = client.seq+1
+  else:
+    print "ACK: Not incrementing CSeq"
   # The Call-ID is a unique identifier to group together messages.
   # It MUST be the same for all requests and responses sent by either UA
   # in a dialog.  It SHOULD be the same in each registration from a UA.
@@ -139,7 +142,6 @@ def addMandatoryHdrs(client, type):
   client.pkt = Via + CSeq + From + CallID + MF
 
 def sendRegister(client, event):
-  print "Send Register"
 # Mandatory request line contains  Method, Request-URI, and SIP version.
   Start = 'REGISTER sip:'+client.conn.sipServer+' SIP/2.0\r\n'
   To = 'To: ' + str(client.calling) + '\r\n'
@@ -151,49 +153,67 @@ def sendRegister(client, event):
   return "OK"
 
 def registerOK(client, event):
-  print "Register OK recvd for client %s", client.params['calling']
+  logging.warn("Register OK recvd for client %s", client.params['calling'])
   sendInvite(client)
   return "OK"
 
 def inviteResp(client, event):
   if event == "RINGING":
-    print "RINGING recvd. for client %s", client.params['calling']
+    logging.warn("RINGING recvd. for client %s", client.params['calling'])
     return "NO-STATE-CHANGE"
   elif event == "OK":
-    print "Invite OK recvd for client %s", client.params['calling']
+    logging.warn("Invite OK recvd for client %s", client.params['calling'])
+    sendAck(client)
     return "OK"
 
+# Add SDP params. No space between name=value pair
 def addSDP(client):
-  # Add SDP message
+  # Add SDP session level params
   sdp = "v=0\r\n"
-  sdp =  sdp + "o=user1 53655765 2353687637 IN IP6 [::1]\r\n"
-  sdp =  sdp + "s=-\r\n"
-  sdp =  sdp + "c=IN IP6 ::1\r\n"
+  #    o=<user> <sess-id> <sess-ver> <nettype> <addrtype> <unicast-addr>
+  sdp =  sdp + "o=user1 53655765 2353687637 IN IP4 1.1.1.1\r\n"
+  sdp =  sdp + "s=Audio Session\r\n"
+  #    c=<nettype> <addrtype> <connection-address>
+  sdp =  sdp + "c=IN IP4 1.1.1.1\r\n"
+  # Add SDP time level params
   sdp =  sdp + "t=0 0\r\n"
+  # Add SDP media level params
+  #    m=<media> <port> <proto> <fmt> ...
   sdp =  sdp + "m=audio 6000 RTP/AVP 0\r\n"
   sdp =  sdp + "a=rtpmap:0 PCMU/8000\r\n"
   sdp =  sdp + "a=sendrecv\r\n"
   sdp =  sdp + "m=video 6001 RTP/AVP 34\r\n"
-
   sdp =  sdp + "a=rtpmap:34 h263/90000\r\n"
   sdp =  sdp + "a=fmtp:34 QCIF=2\r\n"
   sdp =  sdp + "a=sendrecv\r\n"
   return sdp
 
 def sendInvite(client):
-  print "Send Invite"
+  logging.debug("Send Invite")
   Start = 'INVITE '+client.params['calledUri']+' SIP/2.0\r\n'
   # To has logical recipient of the request. Allows for Display Name
   To = 'To: ' + str(client.called) + '\r\n'
   addMandatoryHdrs(client, 'INVITE')
   cl = "Content-Length: 200\r\n"
   ct = "Content-Type: application/sdp\r\n"
+  # An additional CRLF is inserted between Message Line and Body
   client.pkt = Start + To + client.pkt + cl + ct + '\r\n'
   sdp = addSDP(client)
   client.pkt = client.pkt + sdp
   client.conn.send(client.pkt)
   return "INVITE-SENT"
-  
+
+def sendAck(client):
+  logging.debug("Send Ack")
+  Start = 'ACK '+client.params['calledUri']+' SIP/2.0\r\n'
+  # To has logical recipient of the request. Allows for Display Name
+  To = 'To: ' + str(client.called) + '\r\n'
+  addMandatoryHdrs(client, 'ACK')
+  cl = "Content-Length: 200\r\n"
+  client.pkt = Start + To + client.pkt + cl
+  client.conn.send(client.pkt)
+  return "ACK-SENT"
+
 def callSetUp(client, event):
   print "FSM Finish"
 
@@ -204,11 +224,10 @@ class FSM:
   {'ST':'START',    'EV':'ANY', 'NEXT':'REG-SENT', 'FUNC':sendRegister},
   {'ST':'REG-SENT', 'EV':'ANY', 'NEXT':'INV-SENT',  'FUNC':registerOK},
   {'ST':'INV-SENT', 'EV':'ANY', 'NEXT':'INV-OK',   'FUNC':inviteResp},
-  {'ST':'INV-OK',   'EV':'ANY', 'NEXT':'FINISH',   'FUNC':callSetUp},
-  {'ST':'FINISH',   'EV':'ANY', 'NEXT':'FINISH',   'FUNC':callSetUp}
+  {'ST':'INV-OK',   'EV':'ANY', 'NEXT':'FINISH',   'FUNC':callSetUp}
   ]
   def __init__(self, client):
-    print "New FSM init"
+    logging.debug("New FSM init")
     self.client = client
     self.FSM = self.fsm
     self.startState = 'START'
@@ -220,11 +239,11 @@ class FSM:
     status = handler(self.client, event)
     if status == "OK":
       self.state = self.fsm[self.states.index(self.state)]['NEXT']
-      print self.state
+      logging.warn(self.state)
 
 def sipStart(params):
   conn = None
-  print "\nSIPStart with Params:", params
+  logging.debug("\nSIPStart with Params:", params)
   client = Client(params)
   # send a pkt so that sock is valid, and recv in recvThread
   # does not give an error. Socket doesn't have an address untill its
@@ -266,13 +285,35 @@ def loadParams():
       for i in range(2, len(nameValue)):
         value = value + ((" " + nameValue[i]) if nameValue[i] else '')
       params[name] = value
-  print "\nClients:", clients
+  logging.warn("\nClients: %s", clients)
   return clients
 
+class CmdLine(cmd.Cmd):
+  def do_greet(self, line):
+    print "hello", line
+  def do_EOF(self, line):
+    return True
+
+def cmdThread(param):
+  #Ctrl-D to drop out of the interpreter
+  prompt = CmdLine()
+  prompt.prompt = '> '
+  prompt.cmdloop()
+
 if __name__ == '__main__':
-  logging.basicConfig(format='%(asctime)s (%(threadName)-10s) \
-              %(message)s', level=logging.WARN)
+  #logging.basicConfig(format='%(asctime)s (%(threadName)s):
+  # %(message)s', level=logging.WARN)
+  logging.basicConfig(format='(%(threadName)s): %(message)s', level=logging.WARN)
+  
   clients = loadParams()
   sipStart(clients[0])
   sipStart(clients[1])
+  if platform.system() == 'Linux':
+    print platform.system()
+    cmdT = threading.Thread(target=cmdThread, args=("CMD",))
+    cmdT.start()
+  else:
+    print platform.system()
+
+
 
