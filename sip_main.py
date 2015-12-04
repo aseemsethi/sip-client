@@ -256,7 +256,7 @@ class FSM:
 
 def sipStart(params):
   conn = None
-  logging.debug("\nSIPStart with Params:", params)
+  logging.warn("\nSIPStart: %s", params["calling"])
   client = Client(params)
   # send a pkt so that sock is valid, and recv in recvThread
   # does not give an error. Socket doesn't have an address untill its
@@ -318,8 +318,8 @@ if __name__ == '__main__':
   # %(message)s', level=logging.WARN)
   logging.basicConfig(format='(%(threadName)s): %(message)s', level=logging.WARN)
   clients = loadParams()
-  sipStart(clients[0])
-  sipStart(clients[1])
+  for x in range(len(clients)):
+    sipStart(clients[x])
   if platform.system() == 'Linux':
     print platform.system()
     cmdT = threading.Thread(target=cmdThread, args=("CMD",))
