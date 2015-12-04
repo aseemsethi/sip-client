@@ -39,6 +39,16 @@ class Client():
     self.conn.client = self
     self.params = params
     self.calling = params["calling"]
+    
+    # From the Address in resource.txt ignore the Display Name
+    tmp = re.split(r'[ ]', self.calling)[1]
+    # Remove the <>
+    self.callingAddress = re.sub('[<>]', '', tmp)
+    # Remove the sip:
+    self.callingAddress = self.callingAddress.replace("sip:", '')
+    # Done
+    
+    print self.callingAddress
     self.called = params["called"]
     self.seq = 1 # Initialize the counter for this client
     self.CallID = 400000+random.randint(0,500000)
@@ -119,9 +129,11 @@ def addMandatoryHdrs(client, type):
   # tag to the To header field in the response, if it was missing in request.
   
   # The VIA with the Branch param is mandatory. Part after MAGIC cookie z9hG4bK
-  # could be the hash ID of the transaction
+  # could be the hash ID of the transaction.
+  # Via contains the address at which caller is expecting to receive
+  # responses to this request.
   # TBD: Put the digits following the cookie in the Client struct, i.e. 11111
-  Via = 'Via: SIP/2.0/UDP yahoo.com ;branch=z9hG4bK-11111\r\n'
+  Via = 'Via: SIP/2.0/UDP ' + client.callingAddress + ' ;branch=z9hG4bK-11111\r\n'
   # The From field MUST contain a new "tag" parameter, chosen by the UAC.
   From = 'From: ' + str(client.calling) + '; tag=call1\r\n'
   # CSeq increments for every request from client (Except ACK, CANCEL)
@@ -171,9 +183,10 @@ def addSDP(client):
   # Add SDP session level params
   sdp = "v=0\r\n"
   #    o=<user> <sess-id> <sess-ver> <nettype> <addrtype> <unicast-addr>
-  sdp =  sdp + "o=user1 53655765 2353687637 IN IP4 1.1.1.1\r\n"
+  sdp =  sdp + "o=user1 1234567 1234567 IN IP4 1.1.1.1\r\n"
   sdp =  sdp + "s=Audio Session\r\n"
   #    c=<nettype> <addrtype> <connection-address>
+  #    This is the IP for bearer session
   sdp =  sdp + "c=IN IP4 1.1.1.1\r\n"
   # Add SDP time level params
   sdp =  sdp + "t=0 0\r\n"
@@ -304,7 +317,6 @@ if __name__ == '__main__':
   #logging.basicConfig(format='%(asctime)s (%(threadName)s):
   # %(message)s', level=logging.WARN)
   logging.basicConfig(format='(%(threadName)s): %(message)s', level=logging.WARN)
-  
   clients = loadParams()
   sipStart(clients[0])
   sipStart(clients[1])
@@ -313,6 +325,7 @@ if __name__ == '__main__':
     cmdT = threading.Thread(target=cmdThread, args=("CMD",))
     cmdT.start()
   else:
+    # Some issue with select.select() call in windows. TBD - work on this.
     print platform.system()
 
 
