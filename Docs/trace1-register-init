@@ -1,0 +1,1697 @@
+No.     Time           Source                Destination           Protocol Length Info
+     49 1.633141000    172.17.19.62          172.17.19.222         UDP      43     Source port: 58766  Destination port: 5060
+
+Frame 49: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58766 (58766), Dst Port: 5060 (5060)
+    Source Port: 58766 (58766)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x594a [validation disabled]
+    [Stream index: 15]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 32 68 00 00 80 11 89 29 ac 11 13 3e ac 11   ..2h.....)...>..
+0020  13 de e5 8e 13 c4 00 09 59 4a 2e                  ........YJ.
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 1.636700000    172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 50: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58766 (58766), Dst Port: 5060 (5060)
+    Source Port: 58766 (58766)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x5fee [validation disabled]
+    [Stream index: 15]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 32 69 00 00 80 11 87 fa ac 11 13 3e ac 11   .K2i.........>..
+0020  13 de e5 8e 13 c4 01 37 5f ee 52 45 47 49 53 54   .......7_.REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0060  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   seem@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 41 73 65 65   TER..From: "Asee
+00c0  6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79 61   m" <sip:aseem@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 36 32   ll1..Call-ID: 62
+00f0  31 33 33 39 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   1339..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 1.642747000    172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 51: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58766 (58766)
+    Source Port: 5060 (5060)
+    Destination Port: 58766 (58766)
+    Length: 208
+    Checksum: 0x3c0c [validation disabled]
+    [Stream index: 15]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 50]
+        [Response Time (ms): 6]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 91 40 00 3f 11 80 39 ac 11 13 de ac 11   ..;.@.?..9......
+0020  13 3e 13 c4 e5 8e 00 d0 3c 0c 53 49 50 2f 32 2e   .>......<.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 36 32 31 33 33 39 0d 0a 46 72 6f   -ID: 621339..Fro
+0060  6d 3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a   m: "Aseem" <sip:
+0070  61 73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e   aseem@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 1.663088000    172.17.19.62          172.17.19.222         UDP      43     Source port: 58767  Destination port: 5060
+
+Frame 52: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58767 (58767), Dst Port: 5060 (5060)
+    Source Port: 58767 (58767)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x5949 [validation disabled]
+    [Stream index: 16]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 32 6a 00 00 80 11 89 27 ac 11 13 3e ac 11   ..2j.....'...>..
+0020  13 de e5 8f 13 c4 00 09 59 49 2e                  ........YI.
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 1.670328000    172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 53: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58767 (58767), Dst Port: 5060 (5060)
+    Source Port: 58767 (58767)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x21b6 [validation disabled]
+    [Stream index: 16]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 32 6b 00 00 80 11 87 f8 ac 11 13 3e ac 11   .K2k.........>..
+0020  13 de e5 8f 13 c4 01 37 21 b6 52 45 47 49 53 54   .......7!.REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0060  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   hruv@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 44 68 72 75   TER..From: "Dhru
+00c0  76 22 20 3c 73 69 70 3a 64 68 72 75 76 40 79 61   v" <sip:dhruv@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 36 37   ll1..Call-ID: 67
+00f0  34 30 32 32 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   4022..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 1.672438000    172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 56: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58767 (58767)
+    Source Port: 5060 (5060)
+    Destination Port: 58767 (58767)
+    Length: 208
+    Checksum: 0x0eff [validation disabled]
+    [Stream index: 16]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 53]
+        [Response Time (ms): 2]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 92 40 00 3f 11 80 38 ac 11 13 de ac 11   ..;.@.?..8......
+0020  13 3e 13 c4 e5 8f 00 d0 0e ff 53 49 50 2f 32 2e   .>........SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 36 37 34 30 32 32 0d 0a 46 72 6f   -ID: 674022..Fro
+0060  6d 3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a   m: "Dhruv" <sip:
+0070  64 68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e   dhruv@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 1.673781000    172.17.19.62          172.17.19.222         SIP/SDP  529    Request: INVITE sip:kavita@ymail.com | 
+
+Frame 57: 529 bytes on wire (4232 bits), 529 bytes captured (4232 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58766 (58766), Dst Port: 5060 (5060)
+    Source Port: 58766 (58766)
+    Destination Port: 5060 (5060)
+    Length: 495
+    Checksum: 0x336e [validation disabled]
+    [Stream index: 15]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:kavita@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:kavita@ymail.com
+            Request-URI User Part: kavita
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 03 32 6c 00 00 80 11 87 3f ac 11 13 3e ac 11   ..2l.....?...>..
+0020  13 de e5 8e 13 c4 01 ef 33 6e 49 4e 56 49 54 45   ........3nINVITE
+0030  20 73 69 70 3a 6b 61 76 69 74 61 40 79 6d 61 69    sip:kavita@ymai
+0040  6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a 54   l.com SIP/2.0..T
+0050  6f 3a 20 22 4b 61 76 69 74 61 22 20 3c 73 69 70   o: "Kavita" <sip
+0060  3a 6b 61 76 69 74 61 40 79 6d 61 69 6c 2e 63 6f   :kavita@ymail.co
+0070  6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f 32 2e 30   m>..Via: SIP/2.0
+0080  2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b   /UDP yahoo.com ;
+0090  62 72 61 6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31   branch=z9hG4bK-1
+00a0  31 31 31 31 0d 0a 43 53 65 71 3a 20 32 20 49 4e   1111..CSeq: 2 IN
+00b0  56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22 41 73 65   VITE..From: "Ase
+00c0  65 6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79   em" <sip:aseem@y
+00d0  61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63   ahoo.com>; tag=c
+00e0  61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 36   all1..Call-ID: 6
+00f0  32 31 33 33 39 0d 0a 4d 61 78 2d 46 6f 72 77 61   21339..Max-Forwa
+0100  72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74 65 6e 74   rds: 70..Content
+0110  2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d 0a 43 6f   -Length: 200..Co
+0120  6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c   ntent-Type: appl
+0130  69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 0d 0a 76   ication/sdp....v
+0140  3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35 33 36 35   =0..o=user1 5365
+0150  35 37 36 35 20 32 33 35 33 36 38 37 36 33 37 20   5765 2353687637 
+0160  49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d 0a 73 3d   IN IP6 [::1]..s=
+0170  2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a 3a 31 0d   -..c=IN IP6 ::1.
+0180  0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64 69 6f 20   .t=0 0..m=audio 
+0190  36 30 30 30 20 52 54 50 2f 41 56 50 20 30 0d 0a   6000 RTP/AVP 0..
+01a0  61 3d 72 74 70 6d 61 70 3a 30 20 50 43 4d 55 2f   a=rtpmap:0 PCMU/
+01b0  38 30 30 30 0d 0a 61 3d 73 65 6e 64 72 65 63 76   8000..a=sendrecv
+01c0  0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30 31 20 52   ..m=video 6001 R
+01d0  54 50 2f 41 56 50 20 33 34 0d 0a 61 3d 72 74 70   TP/AVP 34..a=rtp
+01e0  6d 61 70 3a 33 34 20 68 32 36 33 2f 39 30 30 30   map:34 h263/9000
+01f0  30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20 51 43 49   0..a=fmtp:34 QCI
+0200  46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65 63 76 0d   F=2..a=sendrecv.
+0210  0a                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 1.676855000    172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 58: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58766 (58766)
+    Source Port: 5060 (5060)
+    Destination Port: 58766 (58766)
+    Length: 211
+    Checksum: 0xf862 [validation disabled]
+    [Stream index: 15]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 57]
+        [Response Time (ms): 3]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b 93 40 00 3f 11 80 34 ac 11 13 de ac 11   ..;.@.?..4......
+0020  13 3e 13 c4 e5 8e 00 d3 f8 62 53 49 50 2f 32 2e   .>.......bSIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 36 32 31 33 33 39 0d 0a   all-ID: 621339..
+0060  46 72 6f 6d 3a 20 22 41 73 65 65 6d 22 20 3c 73   From: "Aseem" <s
+0070  69 70 3a 61 73 65 65 6d 40 79 61 68 6f 6f 2e 63   ip:aseem@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 1.681872000    172.17.19.222         172.17.19.62          SIP/SDP  553    Status: 200 OK | 
+
+Frame 59: 553 bytes on wire (4424 bits), 553 bytes captured (4424 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58766 (58766)
+    Source Port: 5060 (5060)
+    Destination Port: 58766 (58766)
+    Length: 519
+    Checksum: 0x89d9 [validation disabled]
+    [Stream index: 15]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 57]
+        [Response Time (ms): 8]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1b 3b 94 40 00 3f 11 7e ff ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 e5 8e 02 07 89 d9 53 49 50 2f 32 2e   .>........SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0080  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   seem@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 4b 61 76 69 74 61 22 20 3c 73 69 70 3a 6b 61   "Kavita" <sip:ka
+00b0  76 69 74 61 40 79 6d 61 69 6c 2e 63 6f 6d 3e 3b   vita@ymail.com>;
+00c0  74 61 67 3d 33 30 32 36 53 49 50 70 54 61 67 30   tag=3026SIPpTag0
+00d0  31 36 30 0d 0a 43 61 6c 6c 2d 49 44 3a 20 36 32   160..Call-ID: 62
+00e0  31 33 33 39 0d 0a 43 53 65 71 3a 20 32 20 49 4e   1339..CSeq: 2 IN
+00f0  56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a 20 3c   VITE..Contact: <
+0100  73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30 3b 74   sip:[::1]:5060;t
+0110  72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d 0a 43   ransport=UDP>..C
+0120  6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70   ontent-Type: app
+0130  6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 43 6f   lication/sdp..Co
+0140  6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 20 20   ntent-Length:   
+0150  32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d 75 73   212....v=0..o=us
+0160  65 72 31 20 35 33 36 35 35 37 36 35 20 32 33 35   er1 53655765 235
+0170  33 36 38 37 36 33 37 20 49 4e 20 49 50 36 20 5b   3687637 IN IP6 [
+0180  3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49 4e 20   ::1]..s=-..c=IN 
+0190  49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30 0d 0a   IP6 ::1..t=0 0..
+01a0  6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52 54 50   m=audio 6000 RTP
+01b0  2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d 61 70   /AVP 0..a=rtpmap
+01c0  3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a 61 3d   :0 PCMU/8000..a=
+01d0  73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69 64 65   sendrecv..m=vide
+01e0  6f 20 36 30 30 31 20 52 54 50 2f 41 56 50 20 33   o 6001 RTP/AVP 3
+01f0  34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34 20 68   4..a=rtpmap:34 h
+0200  32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66 6d 74   263/90000..a=fmt
+0210  70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61 3d 73   p:34 QCIF=2..a=s
+0220  65 6e 64 72 65 63 76 0d 0a                        endrecv..
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 1.759065000    172.17.19.62          172.17.19.222         SIP/SDP  532    Request: INVITE sip:pallavi@ymail.com | 
+
+Frame 60: 532 bytes on wire (4256 bits), 532 bytes captured (4256 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 58767 (58767), Dst Port: 5060 (5060)
+    Source Port: 58767 (58767)
+    Destination Port: 5060 (5060)
+    Length: 498
+    Checksum: 0x54d0 [validation disabled]
+    [Stream index: 16]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:pallavi@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:pallavi@ymail.com
+            Request-URI User Part: pallavi
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 06 32 6d 00 00 80 11 87 3b ac 11 13 3e ac 11   ..2m.....;...>..
+0020  13 de e5 8f 13 c4 01 f2 54 d0 49 4e 56 49 54 45   ........T.INVITE
+0030  20 73 69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61    sip:pallavi@yma
+0040  69 6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a   il.com SIP/2.0..
+0050  54 6f 3a 20 22 50 61 6c 6c 61 76 69 22 20 3c 73   To: "Pallavi" <s
+0060  69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61 69 6c   ip:pallavi@ymail
+0070  2e 63 6f 6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f   .com>..Via: SIP/
+0080  32 2e 30 2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f   2.0/UDP yahoo.co
+0090  6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68 47 34 62   m ;branch=z9hG4b
+00a0  4b 2d 31 31 31 31 31 0d 0a 43 53 65 71 3a 20 32   K-11111..CSeq: 2
+00b0  20 49 4e 56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22    INVITE..From: "
+00c0  44 68 72 75 76 22 20 3c 73 69 70 3a 64 68 72 75   Dhruv" <sip:dhru
+00d0  76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61   v@yahoo.com>; ta
+00e0  67 3d 63 61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44   g=call1..Call-ID
+00f0  3a 20 36 37 34 30 32 32 0d 0a 4d 61 78 2d 46 6f   : 674022..Max-Fo
+0100  72 77 61 72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74   rwards: 70..Cont
+0110  65 6e 74 2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d   ent-Length: 200.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  0d 0a 76 3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35   ..v=0..o=user1 5
+0150  33 36 35 35 37 36 35 20 32 33 35 33 36 38 37 36   3655765 23536876
+0160  33 37 20 49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d   37 IN IP6 [::1].
+0170  0a 73 3d 2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a   .s=-..c=IN IP6 :
+0180  3a 31 0d 0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64   :1..t=0 0..m=aud
+0190  69 6f 20 36 30 30 30 20 52 54 50 2f 41 56 50 20   io 6000 RTP/AVP 
+01a0  30 0d 0a 61 3d 72 74 70 6d 61 70 3a 30 20 50 43   0..a=rtpmap:0 PC
+01b0  4d 55 2f 38 30 30 30 0d 0a 61 3d 73 65 6e 64 72   MU/8000..a=sendr
+01c0  65 63 76 0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30   ecv..m=video 600
+01d0  31 20 52 54 50 2f 41 56 50 20 33 34 0d 0a 61 3d   1 RTP/AVP 34..a=
+01e0  72 74 70 6d 61 70 3a 33 34 20 68 32 36 33 2f 39   rtpmap:34 h263/9
+01f0  30 30 30 30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20   0000..a=fmtp:34 
+0200  51 43 49 46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65   QCIF=2..a=sendre
+0210  63 76 0d 0a                                       cv..
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 1.760914000    172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 61: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58767 (58767)
+    Source Port: 5060 (5060)
+    Destination Port: 58767 (58767)
+    Length: 211
+    Checksum: 0xec34 [validation disabled]
+    [Stream index: 16]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 60]
+        [Response Time (ms): 1]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b 95 40 00 3f 11 80 32 ac 11 13 de ac 11   ..;.@.?..2......
+0020  13 3e 13 c4 e5 8f 00 d3 ec 34 53 49 50 2f 32 2e   .>.......4SIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 36 37 34 30 32 32 0d 0a   all-ID: 674022..
+0060  46 72 6f 6d 3a 20 22 44 68 72 75 76 22 20 3c 73   From: "Dhruv" <s
+0070  69 70 3a 64 68 72 75 76 40 79 61 68 6f 6f 2e 63   ip:dhruv@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 1.764528000    172.17.19.222         172.17.19.62          SIP/SDP  555    Status: 200 OK | 
+
+Frame 62: 555 bytes on wire (4440 bits), 555 bytes captured (4440 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 58767 (58767)
+    Source Port: 5060 (5060)
+    Destination Port: 58767 (58767)
+    Length: 521
+    Checksum: 0x77d9 [validation disabled]
+    [Stream index: 16]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 60]
+        [Response Time (ms): 5]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1d 3b 96 40 00 3f 11 7e fb ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 e5 8f 02 09 77 d9 53 49 50 2f 32 2e   .>......w.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0080  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   hruv@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 50 61 6c 6c 61 76 69 22 20 3c 73 69 70 3a 70   "Pallavi" <sip:p
+00b0  61 6c 6c 61 76 69 40 79 6d 61 69 6c 2e 63 6f 6d   allavi@ymail.com
+00c0  3e 3b 74 61 67 3d 33 30 32 36 53 49 50 70 54 61   >;tag=3026SIPpTa
+00d0  67 30 31 36 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20   g0161..Call-ID: 
+00e0  36 37 34 30 32 32 0d 0a 43 53 65 71 3a 20 32 20   674022..CSeq: 2 
+00f0  49 4e 56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a   INVITE..Contact:
+0100  20 3c 73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30    <sip:[::1]:5060
+0110  3b 74 72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d   ;transport=UDP>.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+0150  20 20 32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d     212....v=0..o=
+0160  75 73 65 72 31 20 35 33 36 35 35 37 36 35 20 32   user1 53655765 2
+0170  33 35 33 36 38 37 36 33 37 20 49 4e 20 49 50 36   353687637 IN IP6
+0180  20 5b 3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49    [::1]..s=-..c=I
+0190  4e 20 49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30   N IP6 ::1..t=0 0
+01a0  0d 0a 6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52   ..m=audio 6000 R
+01b0  54 50 2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d   TP/AVP 0..a=rtpm
+01c0  61 70 3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a   ap:0 PCMU/8000..
+01d0  61 3d 73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69   a=sendrecv..m=vi
+01e0  64 65 6f 20 36 30 30 31 20 52 54 50 2f 41 56 50   deo 6001 RTP/AVP
+01f0  20 33 34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34    34..a=rtpmap:34
+0200  20 68 32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66    h263/90000..a=f
+0210  6d 74 70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61   mtp:34 QCIF=2..a
+0220  3d 73 65 6e 64 72 65 63 76 0d 0a                  =sendrecv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3958 108.808924000  172.17.19.62          172.17.19.222         UDP      43     Source port: 61268  Destination port: 5060
+
+Frame 3958: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61268 (61268), Dst Port: 5060 (5060)
+    Source Port: 61268 (61268)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x4f84 [validation disabled]
+    [Stream index: 233]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 36 6e 00 00 80 11 85 23 ac 11 13 3e ac 11   ..6n.....#...>..
+0020  13 de ef 54 13 c4 00 09 4f 84 2e                  ...T....O..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3959 108.812162000  172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 3959: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61268 (61268), Dst Port: 5060 (5060)
+    Source Port: 61268 (61268)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x512a [validation disabled]
+    [Stream index: 233]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 36 6f 00 00 80 11 83 f4 ac 11 13 3e ac 11   .K6o.........>..
+0020  13 de ef 54 13 c4 01 37 51 2a 52 45 47 49 53 54   ...T...7Q*REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0060  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   seem@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 41 73 65 65   TER..From: "Asee
+00c0  6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79 61   m" <sip:aseem@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 38 35   ll1..Call-ID: 85
+00f0  34 30 33 37 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   4037..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+   3960 108.822453000  172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 3960: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61268 (61268)
+    Source Port: 5060 (5060)
+    Destination Port: 61268 (61268)
+    Length: 208
+    Checksum: 0x3441 [validation disabled]
+    [Stream index: 233]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 3959]
+        [Response Time (ms): 11]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 97 40 00 3f 11 80 33 ac 11 13 de ac 11   ..;.@.?..3......
+0020  13 3e 13 c4 ef 54 00 d0 34 41 53 49 50 2f 32 2e   .>...T..4ASIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 38 35 34 30 33 37 0d 0a 46 72 6f   -ID: 854037..Fro
+0060  6d 3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a   m: "Aseem" <sip:
+0070  61 73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e   aseem@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3961 108.835197000  172.17.19.62          172.17.19.222         UDP      43     Source port: 61269  Destination port: 5060
+
+Frame 3961: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61269 (61269), Dst Port: 5060 (5060)
+    Source Port: 61269 (61269)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x4f83 [validation disabled]
+    [Stream index: 234]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 36 70 00 00 80 11 85 21 ac 11 13 3e ac 11   ..6p.....!...>..
+0020  13 de ef 55 13 c4 00 09 4f 83 2e                  ...U....O..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3963 108.837021000  172.17.19.62          172.17.19.222         SIP/SDP  529    Request: INVITE sip:kavita@ymail.com | 
+
+Frame 3963: 529 bytes on wire (4232 bits), 529 bytes captured (4232 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61268 (61268), Dst Port: 5060 (5060)
+    Source Port: 61268 (61268)
+    Destination Port: 5060 (5060)
+    Length: 495
+    Checksum: 0x2ba3 [validation disabled]
+    [Stream index: 233]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:kavita@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:kavita@ymail.com
+            Request-URI User Part: kavita
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 03 36 71 00 00 80 11 83 3a ac 11 13 3e ac 11   ..6q.....:...>..
+0020  13 de ef 54 13 c4 01 ef 2b a3 49 4e 56 49 54 45   ...T....+.INVITE
+0030  20 73 69 70 3a 6b 61 76 69 74 61 40 79 6d 61 69    sip:kavita@ymai
+0040  6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a 54   l.com SIP/2.0..T
+0050  6f 3a 20 22 4b 61 76 69 74 61 22 20 3c 73 69 70   o: "Kavita" <sip
+0060  3a 6b 61 76 69 74 61 40 79 6d 61 69 6c 2e 63 6f   :kavita@ymail.co
+0070  6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f 32 2e 30   m>..Via: SIP/2.0
+0080  2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b   /UDP yahoo.com ;
+0090  62 72 61 6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31   branch=z9hG4bK-1
+00a0  31 31 31 31 0d 0a 43 53 65 71 3a 20 32 20 49 4e   1111..CSeq: 2 IN
+00b0  56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22 41 73 65   VITE..From: "Ase
+00c0  65 6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79   em" <sip:aseem@y
+00d0  61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63   ahoo.com>; tag=c
+00e0  61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 38   all1..Call-ID: 8
+00f0  35 34 30 33 37 0d 0a 4d 61 78 2d 46 6f 72 77 61   54037..Max-Forwa
+0100  72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74 65 6e 74   rds: 70..Content
+0110  2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d 0a 43 6f   -Length: 200..Co
+0120  6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c   ntent-Type: appl
+0130  69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 0d 0a 76   ication/sdp....v
+0140  3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35 33 36 35   =0..o=user1 5365
+0150  35 37 36 35 20 32 33 35 33 36 38 37 36 33 37 20   5765 2353687637 
+0160  49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d 0a 73 3d   IN IP6 [::1]..s=
+0170  2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a 3a 31 0d   -..c=IN IP6 ::1.
+0180  0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64 69 6f 20   .t=0 0..m=audio 
+0190  36 30 30 30 20 52 54 50 2f 41 56 50 20 30 0d 0a   6000 RTP/AVP 0..
+01a0  61 3d 72 74 70 6d 61 70 3a 30 20 50 43 4d 55 2f   a=rtpmap:0 PCMU/
+01b0  38 30 30 30 0d 0a 61 3d 73 65 6e 64 72 65 63 76   8000..a=sendrecv
+01c0  0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30 31 20 52   ..m=video 6001 R
+01d0  54 50 2f 41 56 50 20 33 34 0d 0a 61 3d 72 74 70   TP/AVP 34..a=rtp
+01e0  6d 61 70 3a 33 34 20 68 32 36 33 2f 39 30 30 30   map:34 h263/9000
+01f0  30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20 51 43 49   0..a=fmtp:34 QCI
+0200  46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65 63 76 0d   F=2..a=sendrecv.
+0210  0a                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+   3964 108.851911000  172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 3964: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61269 (61269), Dst Port: 5060 (5060)
+    Source Port: 61269 (61269)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x16ec [validation disabled]
+    [Stream index: 234]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 36 72 00 00 80 11 83 f1 ac 11 13 3e ac 11   .K6r.........>..
+0020  13 de ef 55 13 c4 01 37 16 ec 52 45 47 49 53 54   ...U...7..REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0060  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   hruv@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 44 68 72 75   TER..From: "Dhru
+00c0  76 22 20 3c 73 69 70 3a 64 68 72 75 76 40 79 61   v" <sip:dhruv@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 36 39   ll1..Call-ID: 69
+00f0  30 33 37 31 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   0371..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+   3965 108.890536000  172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 3965: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61268 (61268)
+    Source Port: 5060 (5060)
+    Destination Port: 61268 (61268)
+    Length: 211
+    Checksum: 0xe99e [validation disabled]
+    [Stream index: 233]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 3963]
+        [Response Time (ms): 53]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b 98 40 00 3f 11 80 2f ac 11 13 de ac 11   ..;.@.?../......
+0020  13 3e 13 c4 ef 54 00 d3 e9 9e 53 49 50 2f 32 2e   .>...T....SIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 38 35 34 30 33 37 0d 0a   all-ID: 854037..
+0060  46 72 6f 6d 3a 20 22 41 73 65 65 6d 22 20 3c 73   From: "Aseem" <s
+0070  69 70 3a 61 73 65 65 6d 40 79 61 68 6f 6f 2e 63   ip:aseem@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+   3966 108.890617000  172.17.19.222         172.17.19.62          SIP/SDP  553    Status: 200 OK | 
+
+Frame 3966: 553 bytes on wire (4424 bits), 553 bytes captured (4424 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61268 (61268)
+    Source Port: 5060 (5060)
+    Destination Port: 61268 (61268)
+    Length: 519
+    Checksum: 0x7915 [validation disabled]
+    [Stream index: 233]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 3963]
+        [Response Time (ms): 53]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1b 3b 99 40 00 3f 11 7e fa ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 ef 54 02 07 79 15 53 49 50 2f 32 2e   .>...T..y.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0080  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   seem@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 4b 61 76 69 74 61 22 20 3c 73 69 70 3a 6b 61   "Kavita" <sip:ka
+00b0  76 69 74 61 40 79 6d 61 69 6c 2e 63 6f 6d 3e 3b   vita@ymail.com>;
+00c0  74 61 67 3d 33 30 32 36 53 49 50 70 54 61 67 30   tag=3026SIPpTag0
+00d0  31 36 32 0d 0a 43 61 6c 6c 2d 49 44 3a 20 38 35   162..Call-ID: 85
+00e0  34 30 33 37 0d 0a 43 53 65 71 3a 20 32 20 49 4e   4037..CSeq: 2 IN
+00f0  56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a 20 3c   VITE..Contact: <
+0100  73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30 3b 74   sip:[::1]:5060;t
+0110  72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d 0a 43   ransport=UDP>..C
+0120  6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70   ontent-Type: app
+0130  6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 43 6f   lication/sdp..Co
+0140  6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 20 20   ntent-Length:   
+0150  32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d 75 73   212....v=0..o=us
+0160  65 72 31 20 35 33 36 35 35 37 36 35 20 32 33 35   er1 53655765 235
+0170  33 36 38 37 36 33 37 20 49 4e 20 49 50 36 20 5b   3687637 IN IP6 [
+0180  3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49 4e 20   ::1]..s=-..c=IN 
+0190  49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30 0d 0a   IP6 ::1..t=0 0..
+01a0  6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52 54 50   m=audio 6000 RTP
+01b0  2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d 61 70   /AVP 0..a=rtpmap
+01c0  3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a 61 3d   :0 PCMU/8000..a=
+01d0  73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69 64 65   sendrecv..m=vide
+01e0  6f 20 36 30 30 31 20 52 54 50 2f 41 56 50 20 33   o 6001 RTP/AVP 3
+01f0  34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34 20 68   4..a=rtpmap:34 h
+0200  32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66 6d 74   263/90000..a=fmt
+0210  70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61 3d 73   p:34 QCIF=2..a=s
+0220  65 6e 64 72 65 63 76 0d 0a                        endrecv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3967 108.890656000  172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 3967: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61269 (61269)
+    Source Port: 5060 (5060)
+    Destination Port: 61269 (61269)
+    Length: 208
+    Checksum: 0x0138 [validation disabled]
+    [Stream index: 234]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 3964]
+        [Response Time (ms): 38]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 9a 40 00 3f 11 80 30 ac 11 13 de ac 11   ..;.@.?..0......
+0020  13 3e 13 c4 ef 55 00 d0 01 38 53 49 50 2f 32 2e   .>...U...8SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 36 39 30 33 37 31 0d 0a 46 72 6f   -ID: 690371..Fro
+0060  6d 3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a   m: "Dhruv" <sip:
+0070  64 68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e   dhruv@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3968 108.981081000  172.17.19.62          172.17.19.222         SIP/SDP  532    Request: INVITE sip:pallavi@ymail.com | 
+
+Frame 3968: 532 bytes on wire (4256 bits), 532 bytes captured (4256 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61269 (61269), Dst Port: 5060 (5060)
+    Source Port: 61269 (61269)
+    Destination Port: 5060 (5060)
+    Length: 498
+    Checksum: 0x4a06 [validation disabled]
+    [Stream index: 234]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:pallavi@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:pallavi@ymail.com
+            Request-URI User Part: pallavi
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 06 36 73 00 00 80 11 83 35 ac 11 13 3e ac 11   ..6s.....5...>..
+0020  13 de ef 55 13 c4 01 f2 4a 06 49 4e 56 49 54 45   ...U....J.INVITE
+0030  20 73 69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61    sip:pallavi@yma
+0040  69 6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a   il.com SIP/2.0..
+0050  54 6f 3a 20 22 50 61 6c 6c 61 76 69 22 20 3c 73   To: "Pallavi" <s
+0060  69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61 69 6c   ip:pallavi@ymail
+0070  2e 63 6f 6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f   .com>..Via: SIP/
+0080  32 2e 30 2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f   2.0/UDP yahoo.co
+0090  6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68 47 34 62   m ;branch=z9hG4b
+00a0  4b 2d 31 31 31 31 31 0d 0a 43 53 65 71 3a 20 32   K-11111..CSeq: 2
+00b0  20 49 4e 56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22    INVITE..From: "
+00c0  44 68 72 75 76 22 20 3c 73 69 70 3a 64 68 72 75   Dhruv" <sip:dhru
+00d0  76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61   v@yahoo.com>; ta
+00e0  67 3d 63 61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44   g=call1..Call-ID
+00f0  3a 20 36 39 30 33 37 31 0d 0a 4d 61 78 2d 46 6f   : 690371..Max-Fo
+0100  72 77 61 72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74   rwards: 70..Cont
+0110  65 6e 74 2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d   ent-Length: 200.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  0d 0a 76 3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35   ..v=0..o=user1 5
+0150  33 36 35 35 37 36 35 20 32 33 35 33 36 38 37 36   3655765 23536876
+0160  33 37 20 49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d   37 IN IP6 [::1].
+0170  0a 73 3d 2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a   .s=-..c=IN IP6 :
+0180  3a 31 0d 0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64   :1..t=0 0..m=aud
+0190  69 6f 20 36 30 30 30 20 52 54 50 2f 41 56 50 20   io 6000 RTP/AVP 
+01a0  30 0d 0a 61 3d 72 74 70 6d 61 70 3a 30 20 50 43   0..a=rtpmap:0 PC
+01b0  4d 55 2f 38 30 30 30 0d 0a 61 3d 73 65 6e 64 72   MU/8000..a=sendr
+01c0  65 63 76 0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30   ecv..m=video 600
+01d0  31 20 52 54 50 2f 41 56 50 20 33 34 0d 0a 61 3d   1 RTP/AVP 34..a=
+01e0  72 74 70 6d 61 70 3a 33 34 20 68 32 36 33 2f 39   rtpmap:34 h263/9
+01f0  30 30 30 30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20   0000..a=fmtp:34 
+0200  51 43 49 46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65   QCIF=2..a=sendre
+0210  63 76 0d 0a                                       cv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   3969 108.982829000  172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 3969: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61269 (61269)
+    Source Port: 5060 (5060)
+    Destination Port: 61269 (61269)
+    Length: 211
+    Checksum: 0xe16a [validation disabled]
+    [Stream index: 234]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 3968]
+        [Response Time (ms): 1]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b 9b 40 00 3f 11 80 2c ac 11 13 de ac 11   ..;.@.?..,......
+0020  13 3e 13 c4 ef 55 00 d3 e1 6a 53 49 50 2f 32 2e   .>...U...jSIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 36 39 30 33 37 31 0d 0a   all-ID: 690371..
+0060  46 72 6f 6d 3a 20 22 44 68 72 75 76 22 20 3c 73   From: "Dhruv" <s
+0070  69 70 3a 64 68 72 75 76 40 79 61 68 6f 6f 2e 63   ip:dhruv@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+   3970 108.991017000  172.17.19.222         172.17.19.62          SIP/SDP  555    Status: 200 OK | 
+
+Frame 3970: 555 bytes on wire (4440 bits), 555 bytes captured (4440 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61269 (61269)
+    Source Port: 5060 (5060)
+    Destination Port: 61269 (61269)
+    Length: 521
+    Checksum: 0x6b0f [validation disabled]
+    [Stream index: 234]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 3968]
+        [Response Time (ms): 9]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1d 3b 9c 40 00 3f 11 7e f5 ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 ef 55 02 09 6b 0f 53 49 50 2f 32 2e   .>...U..k.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0080  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   hruv@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 50 61 6c 6c 61 76 69 22 20 3c 73 69 70 3a 70   "Pallavi" <sip:p
+00b0  61 6c 6c 61 76 69 40 79 6d 61 69 6c 2e 63 6f 6d   allavi@ymail.com
+00c0  3e 3b 74 61 67 3d 33 30 32 36 53 49 50 70 54 61   >;tag=3026SIPpTa
+00d0  67 30 31 36 33 0d 0a 43 61 6c 6c 2d 49 44 3a 20   g0163..Call-ID: 
+00e0  36 39 30 33 37 31 0d 0a 43 53 65 71 3a 20 32 20   690371..CSeq: 2 
+00f0  49 4e 56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a   INVITE..Contact:
+0100  20 3c 73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30    <sip:[::1]:5060
+0110  3b 74 72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d   ;transport=UDP>.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+0150  20 20 32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d     212....v=0..o=
+0160  75 73 65 72 31 20 35 33 36 35 35 37 36 35 20 32   user1 53655765 2
+0170  33 35 33 36 38 37 36 33 37 20 49 4e 20 49 50 36   353687637 IN IP6
+0180  20 5b 3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49    [::1]..s=-..c=I
+0190  4e 20 49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30   N IP6 ::1..t=0 0
+01a0  0d 0a 6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52   ..m=audio 6000 R
+01b0  54 50 2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d   TP/AVP 0..a=rtpm
+01c0  61 70 3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a   ap:0 PCMU/8000..
+01d0  61 3d 73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69   a=sendrecv..m=vi
+01e0  64 65 6f 20 36 30 30 31 20 52 54 50 2f 41 56 50   deo 6001 RTP/AVP
+01f0  20 33 34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34    34..a=rtpmap:34
+0200  20 68 32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66    h263/90000..a=f
+0210  6d 74 70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61   mtp:34 QCIF=2..a
+0220  3d 73 65 6e 64 72 65 63 76 0d 0a                  =sendrecv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4153 120.298488000  172.17.19.62          172.17.19.222         UDP      43     Source port: 61270  Destination port: 5060
+
+Frame 4153: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61270 (61270), Dst Port: 5060 (5060)
+    Source Port: 61270 (61270)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x4f82 [validation disabled]
+    [Stream index: 241]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 36 7d 00 00 80 11 85 14 ac 11 13 3e ac 11   ..6}.........>..
+0020  13 de ef 56 13 c4 00 09 4f 82 2e                  ...V....O..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4154 120.302190000  172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 4154: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61270 (61270), Dst Port: 5060 (5060)
+    Source Port: 61270 (61270)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x501f [validation disabled]
+    [Stream index: 241]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 36 7e 00 00 80 11 83 e5 ac 11 13 3e ac 11   .K6~.........>..
+0020  13 de ef 56 13 c4 01 37 50 1f 52 45 47 49 53 54   ...V...7P.REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0060  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   seem@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 41 73 65 65   TER..From: "Asee
+00c0  6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79 61   m" <sip:aseem@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 35 39   ll1..Call-ID: 59
+00f0  38 39 33 33 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   8933..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+   4155 120.305314000  172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 4155: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61270 (61270)
+    Source Port: 5060 (5060)
+    Destination Port: 61270 (61270)
+    Length: 208
+    Checksum: 0x2b3e [validation disabled]
+    [Stream index: 241]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 4154]
+        [Response Time (ms): 3]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 9d 40 00 3f 11 80 2d ac 11 13 de ac 11   ..;.@.?..-......
+0020  13 3e 13 c4 ef 56 00 d0 2b 3e 53 49 50 2f 32 2e   .>...V..+>SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 35 39 38 39 33 33 0d 0a 46 72 6f   -ID: 598933..Fro
+0060  6d 3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a   m: "Aseem" <sip:
+0070  61 73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e   aseem@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4156 120.326036000  172.17.19.62          172.17.19.222         UDP      43     Source port: 61271  Destination port: 5060
+
+Frame 4156: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61271 (61271), Dst Port: 5060 (5060)
+    Source Port: 61271 (61271)
+    Destination Port: 5060 (5060)
+    Length: 9
+    Checksum: 0x4f81 [validation disabled]
+    [Stream index: 242]
+Data (1 byte)
+    Data: 2e
+    [Length: 1]
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  00 1d 36 7f 00 00 80 11 85 12 ac 11 13 3e ac 11   ..6..........>..
+0020  13 de ef 57 13 c4 00 09 4f 81 2e                  ...W....O..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4157 120.331876000  172.17.19.62          172.17.19.222         SIP      345    Request: REGISTER sip:172.17.19.222  (fetch bindings) | 
+
+Frame 4157: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61271 (61271), Dst Port: 5060 (5060)
+    Source Port: 61271 (61271)
+    Destination Port: 5060 (5060)
+    Length: 311
+    Checksum: 0x0fe1 [validation disabled]
+    [Stream index: 242]
+Session Initiation Protocol (REGISTER)
+    Request-Line: REGISTER sip:172.17.19.222 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:172.17.19.222
+            Request-URI Host Part: 172.17.19.222
+        [Resent Packet: False]
+    Message Header
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  01 4b 36 80 00 00 80 11 83 e3 ac 11 13 3e ac 11   .K6..........>..
+0020  13 de ef 57 13 c4 01 37 0f e1 52 45 47 49 53 54   ...W...7..REGIST
+0030  45 52 20 73 69 70 3a 31 37 32 2e 31 37 2e 31 39   ER sip:172.17.19
+0040  2e 32 32 32 20 53 49 50 2f 32 2e 30 0d 0a 54 6f   .222 SIP/2.0..To
+0050  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0060  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0d   hruv@yahoo.com>.
+0070  0a 56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44   .Via: SIP/2.0/UD
+0080  50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61   P yahoo.com ;bra
+0090  6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31   nch=z9hG4bK-1111
+00a0  31 0d 0a 43 53 65 71 3a 20 31 20 52 45 47 49 53   1..CSeq: 1 REGIS
+00b0  54 45 52 0d 0a 46 72 6f 6d 3a 20 22 44 68 72 75   TER..From: "Dhru
+00c0  76 22 20 3c 73 69 70 3a 64 68 72 75 76 40 79 61   v" <sip:dhruv@ya
+00d0  68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63 61   hoo.com>; tag=ca
+00e0  6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 37 35   ll1..Call-ID: 75
+00f0  39 39 34 38 0d 0a 4d 61 78 2d 46 6f 72 77 61 72   9948..Max-Forwar
+0100  64 73 3a 20 37 30 0d 0a 41 6c 6c 6f 77 3a 20 49   ds: 70..Allow: I
+0110  4e 56 49 54 45 2c 41 43 4b 2c 4f 50 54 49 4f 4e   NVITE,ACK,OPTION
+0120  53 2c 42 59 45 2c 43 41 4e 43 45 4c 2c 53 55 42   S,BYE,CANCEL,SUB
+0130  53 43 52 49 42 45 2c 4e 4f 54 49 46 59 2c 52 45   SCRIBE,NOTIFY,RE
+0140  46 45 52 2c 4d 45 53 53 41 47 45 2c 49 4e 46 4f   FER,MESSAGE,INFO
+0150  2c 50 49 4e 47 0d 0a 0d 0a                        ,PING....
+
+No.     Time           Source                Destination           Protocol Length Info
+   4158 120.335317000  172.17.19.62          172.17.19.222         SIP/SDP  529    Request: INVITE sip:kavita@ymail.com | 
+
+Frame 4158: 529 bytes on wire (4232 bits), 529 bytes captured (4232 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61270 (61270), Dst Port: 5060 (5060)
+    Source Port: 61270 (61270)
+    Destination Port: 5060 (5060)
+    Length: 495
+    Checksum: 0x22a0 [validation disabled]
+    [Stream index: 241]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:kavita@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:kavita@ymail.com
+            Request-URI User Part: kavita
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 03 36 81 00 00 80 11 83 2a ac 11 13 3e ac 11   ..6......*...>..
+0020  13 de ef 56 13 c4 01 ef 22 a0 49 4e 56 49 54 45   ...V....".INVITE
+0030  20 73 69 70 3a 6b 61 76 69 74 61 40 79 6d 61 69    sip:kavita@ymai
+0040  6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a 54   l.com SIP/2.0..T
+0050  6f 3a 20 22 4b 61 76 69 74 61 22 20 3c 73 69 70   o: "Kavita" <sip
+0060  3a 6b 61 76 69 74 61 40 79 6d 61 69 6c 2e 63 6f   :kavita@ymail.co
+0070  6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f 32 2e 30   m>..Via: SIP/2.0
+0080  2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f 6d 20 3b   /UDP yahoo.com ;
+0090  62 72 61 6e 63 68 3d 7a 39 68 47 34 62 4b 2d 31   branch=z9hG4bK-1
+00a0  31 31 31 31 0d 0a 43 53 65 71 3a 20 32 20 49 4e   1111..CSeq: 2 IN
+00b0  56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22 41 73 65   VITE..From: "Ase
+00c0  65 6d 22 20 3c 73 69 70 3a 61 73 65 65 6d 40 79   em" <sip:aseem@y
+00d0  61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61 67 3d 63   ahoo.com>; tag=c
+00e0  61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44 3a 20 35   all1..Call-ID: 5
+00f0  39 38 39 33 33 0d 0a 4d 61 78 2d 46 6f 72 77 61   98933..Max-Forwa
+0100  72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74 65 6e 74   rds: 70..Content
+0110  2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d 0a 43 6f   -Length: 200..Co
+0120  6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c   ntent-Type: appl
+0130  69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 0d 0a 76   ication/sdp....v
+0140  3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35 33 36 35   =0..o=user1 5365
+0150  35 37 36 35 20 32 33 35 33 36 38 37 36 33 37 20   5765 2353687637 
+0160  49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d 0a 73 3d   IN IP6 [::1]..s=
+0170  2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a 3a 31 0d   -..c=IN IP6 ::1.
+0180  0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64 69 6f 20   .t=0 0..m=audio 
+0190  36 30 30 30 20 52 54 50 2f 41 56 50 20 30 0d 0a   6000 RTP/AVP 0..
+01a0  61 3d 72 74 70 6d 61 70 3a 30 20 50 43 4d 55 2f   a=rtpmap:0 PCMU/
+01b0  38 30 30 30 0d 0a 61 3d 73 65 6e 64 72 65 63 76   8000..a=sendrecv
+01c0  0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30 31 20 52   ..m=video 6001 R
+01d0  54 50 2f 41 56 50 20 33 34 0d 0a 61 3d 72 74 70   TP/AVP 34..a=rtp
+01e0  6d 61 70 3a 33 34 20 68 32 36 33 2f 39 30 30 30   map:34 h263/9000
+01f0  30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20 51 43 49   0..a=fmtp:34 QCI
+0200  46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65 63 76 0d   F=2..a=sendrecv.
+0210  0a                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+   4159 120.352262000  172.17.19.222         172.17.19.62          SIP      242    Status: 200 OK  (1 binding) | 
+
+Frame 4159: 242 bytes on wire (1936 bits), 242 bytes captured (1936 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61271 (61271)
+    Source Port: 5060 (5060)
+    Destination Port: 61271 (61271)
+    Length: 208
+    Checksum: 0xf82e [validation disabled]
+    [Stream index: 242]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 4157]
+        [Response Time (ms): 20]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e4 3b 9e 40 00 3f 11 80 2c ac 11 13 de ac 11   ..;.@.?..,......
+0020  13 3e 13 c4 ef 57 00 d0 f8 2e 53 49 50 2f 32 2e   .>...W....SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 43 53 65 71 3a 20   0 200 OK..CSeq: 
+0040  31 20 52 45 47 49 53 54 45 52 0d 0a 43 61 6c 6c   1 REGISTER..Call
+0050  2d 49 44 3a 20 37 35 39 39 34 38 0d 0a 46 72 6f   -ID: 759948..Fro
+0060  6d 3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a   m: "Dhruv" <sip:
+0070  64 68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e   dhruv@yahoo.com>
+0080  3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a 56 69 61   ; tag=call1..Via
+0090  3a 20 53 49 50 2f 32 2e 30 2f 55 44 50 20 79 61   : SIP/2.0/UDP ya
+00a0  68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d   hoo.com ;branch=
+00b0  7a 39 68 47 34 62 4b 2d 31 31 31 31 31 0d 0a 43   z9hG4bK-11111..C
+00c0  6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a 31 39 32   ontact: <sip:192
+00d0  2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a 43 6f 6e   .168.1.112>..Con
+00e0  74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 30 0d 0a   tent-Length: 0..
+00f0  0d 0a                                             ..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4160 120.353253000  172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 4160: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61270 (61270)
+    Source Port: 5060 (5060)
+    Destination Port: 61270 (61270)
+    Length: 211
+    Checksum: 0xe893 [validation disabled]
+    [Stream index: 241]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 4158]
+        [Response Time (ms): 17]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b 9f 40 00 3f 11 80 28 ac 11 13 de ac 11   ..;.@.?..(......
+0020  13 3e 13 c4 ef 56 00 d3 e8 93 53 49 50 2f 32 2e   .>...V....SIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 35 39 38 39 33 33 0d 0a   all-ID: 598933..
+0060  46 72 6f 6d 3a 20 22 41 73 65 65 6d 22 20 3c 73   From: "Aseem" <s
+0070  69 70 3a 61 73 65 65 6d 40 79 61 68 6f 6f 2e 63   ip:aseem@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+   4161 120.353504000  172.17.19.222         172.17.19.62          SIP/SDP  553    Status: 200 OK | 
+
+Frame 4161: 553 bytes on wire (4424 bits), 553 bytes captured (4424 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61270 (61270)
+    Source Port: 5060 (5060)
+    Destination Port: 61270 (61270)
+    Length: 519
+    Checksum: 0x760a [validation disabled]
+    [Stream index: 241]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 4158]
+        [Response Time (ms): 18]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1b 3b a0 40 00 3f 11 7e f3 ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 ef 56 02 07 76 0a 53 49 50 2f 32 2e   .>...V..v.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 41 73 65 65 6d 22 20 3c 73 69 70 3a 61   : "Aseem" <sip:a
+0080  73 65 65 6d 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   seem@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 4b 61 76 69 74 61 22 20 3c 73 69 70 3a 6b 61   "Kavita" <sip:ka
+00b0  76 69 74 61 40 79 6d 61 69 6c 2e 63 6f 6d 3e 3b   vita@ymail.com>;
+00c0  74 61 67 3d 33 30 32 36 53 49 50 70 54 61 67 30   tag=3026SIPpTag0
+00d0  31 36 34 0d 0a 43 61 6c 6c 2d 49 44 3a 20 35 39   164..Call-ID: 59
+00e0  38 39 33 33 0d 0a 43 53 65 71 3a 20 32 20 49 4e   8933..CSeq: 2 IN
+00f0  56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a 20 3c   VITE..Contact: <
+0100  73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30 3b 74   sip:[::1]:5060;t
+0110  72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d 0a 43   ransport=UDP>..C
+0120  6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70   ontent-Type: app
+0130  6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a 43 6f   lication/sdp..Co
+0140  6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 20 20   ntent-Length:   
+0150  32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d 75 73   212....v=0..o=us
+0160  65 72 31 20 35 33 36 35 35 37 36 35 20 32 33 35   er1 53655765 235
+0170  33 36 38 37 36 33 37 20 49 4e 20 49 50 36 20 5b   3687637 IN IP6 [
+0180  3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49 4e 20   ::1]..s=-..c=IN 
+0190  49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30 0d 0a   IP6 ::1..t=0 0..
+01a0  6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52 54 50   m=audio 6000 RTP
+01b0  2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d 61 70   /AVP 0..a=rtpmap
+01c0  3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a 61 3d   :0 PCMU/8000..a=
+01d0  73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69 64 65   sendrecv..m=vide
+01e0  6f 20 36 30 30 31 20 52 54 50 2f 41 56 50 20 33   o 6001 RTP/AVP 3
+01f0  34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34 20 68   4..a=rtpmap:34 h
+0200  32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66 6d 74   263/90000..a=fmt
+0210  70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61 3d 73   p:34 QCIF=2..a=s
+0220  65 6e 64 72 65 63 76 0d 0a                        endrecv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4162 120.417568000  172.17.19.62          172.17.19.222         SIP/SDP  532    Request: INVITE sip:pallavi@ymail.com | 
+
+Frame 4162: 532 bytes on wire (4256 bits), 532 bytes captured (4256 bits) on interface 3
+Ethernet II, Src: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3), Dst: CadmusCo_fd:7d:6c (08:00:27:fd:7d:6c)
+Internet Protocol Version 4, Src: 172.17.19.62 (172.17.19.62), Dst: 172.17.19.222 (172.17.19.222)
+User Datagram Protocol, Src Port: 61271 (61271), Dst Port: 5060 (5060)
+    Source Port: 61271 (61271)
+    Destination Port: 5060 (5060)
+    Length: 498
+    Checksum: 0x42fb [validation disabled]
+    [Stream index: 242]
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:pallavi@ymail.com SIP/2.0
+        Method: INVITE
+        Request-URI: sip:pallavi@ymail.com
+            Request-URI User Part: pallavi
+            Request-URI Host Part: ymail.com
+        [Resent Packet: False]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): 
+
+0000  08 00 27 fd 7d 6c ac e0 10 9f 14 e3 08 00 45 00   ..'.}l........E.
+0010  02 06 36 82 00 00 80 11 83 26 ac 11 13 3e ac 11   ..6......&...>..
+0020  13 de ef 57 13 c4 01 f2 42 fb 49 4e 56 49 54 45   ...W....B.INVITE
+0030  20 73 69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61    sip:pallavi@yma
+0040  69 6c 2e 63 6f 6d 20 53 49 50 2f 32 2e 30 0d 0a   il.com SIP/2.0..
+0050  54 6f 3a 20 22 50 61 6c 6c 61 76 69 22 20 3c 73   To: "Pallavi" <s
+0060  69 70 3a 70 61 6c 6c 61 76 69 40 79 6d 61 69 6c   ip:pallavi@ymail
+0070  2e 63 6f 6d 3e 0d 0a 56 69 61 3a 20 53 49 50 2f   .com>..Via: SIP/
+0080  32 2e 30 2f 55 44 50 20 79 61 68 6f 6f 2e 63 6f   2.0/UDP yahoo.co
+0090  6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68 47 34 62   m ;branch=z9hG4b
+00a0  4b 2d 31 31 31 31 31 0d 0a 43 53 65 71 3a 20 32   K-11111..CSeq: 2
+00b0  20 49 4e 56 49 54 45 0d 0a 46 72 6f 6d 3a 20 22    INVITE..From: "
+00c0  44 68 72 75 76 22 20 3c 73 69 70 3a 64 68 72 75   Dhruv" <sip:dhru
+00d0  76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b 20 74 61   v@yahoo.com>; ta
+00e0  67 3d 63 61 6c 6c 31 0d 0a 43 61 6c 6c 2d 49 44   g=call1..Call-ID
+00f0  3a 20 37 35 39 39 34 38 0d 0a 4d 61 78 2d 46 6f   : 759948..Max-Fo
+0100  72 77 61 72 64 73 3a 20 37 30 0d 0a 43 6f 6e 74   rwards: 70..Cont
+0110  65 6e 74 2d 4c 65 6e 67 74 68 3a 20 32 30 30 0d   ent-Length: 200.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  0d 0a 76 3d 30 0d 0a 6f 3d 75 73 65 72 31 20 35   ..v=0..o=user1 5
+0150  33 36 35 35 37 36 35 20 32 33 35 33 36 38 37 36   3655765 23536876
+0160  33 37 20 49 4e 20 49 50 36 20 5b 3a 3a 31 5d 0d   37 IN IP6 [::1].
+0170  0a 73 3d 2d 0d 0a 63 3d 49 4e 20 49 50 36 20 3a   .s=-..c=IN IP6 :
+0180  3a 31 0d 0a 74 3d 30 20 30 0d 0a 6d 3d 61 75 64   :1..t=0 0..m=aud
+0190  69 6f 20 36 30 30 30 20 52 54 50 2f 41 56 50 20   io 6000 RTP/AVP 
+01a0  30 0d 0a 61 3d 72 74 70 6d 61 70 3a 30 20 50 43   0..a=rtpmap:0 PC
+01b0  4d 55 2f 38 30 30 30 0d 0a 61 3d 73 65 6e 64 72   MU/8000..a=sendr
+01c0  65 63 76 0d 0a 6d 3d 76 69 64 65 6f 20 36 30 30   ecv..m=video 600
+01d0  31 20 52 54 50 2f 41 56 50 20 33 34 0d 0a 61 3d   1 RTP/AVP 34..a=
+01e0  72 74 70 6d 61 70 3a 33 34 20 68 32 36 33 2f 39   rtpmap:34 h263/9
+01f0  30 30 30 30 0d 0a 61 3d 66 6d 74 70 3a 33 34 20   0000..a=fmtp:34 
+0200  51 43 49 46 3d 32 0d 0a 61 3d 73 65 6e 64 72 65   QCIF=2..a=sendre
+0210  63 76 0d 0a                                       cv..
+
+No.     Time           Source                Destination           Protocol Length Info
+   4163 120.419062000  172.17.19.222         172.17.19.62          SIP      245    Status: 180 RINGING | 
+
+Frame 4163: 245 bytes on wire (1960 bits), 245 bytes captured (1960 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61271 (61271)
+    Source Port: 5060 (5060)
+    Destination Port: 61271 (61271)
+    Length: 211
+    Checksum: 0xda5f [validation disabled]
+    [Stream index: 242]
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 RINGING
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 4162]
+        [Response Time (ms): 1]
+    Message Header
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  00 e7 3b a1 40 00 3f 11 80 26 ac 11 13 de ac 11   ..;.@.?..&......
+0020  13 3e 13 c4 ef 57 00 d3 da 5f 53 49 50 2f 32 2e   .>...W..._SIP/2.
+0030  30 20 31 38 30 20 52 49 4e 47 49 4e 47 0d 0a 43   0 180 RINGING..C
+0040  53 65 71 3a 20 32 20 49 4e 56 49 54 45 0d 0a 43   Seq: 2 INVITE..C
+0050  61 6c 6c 2d 49 44 3a 20 37 35 39 39 34 38 0d 0a   all-ID: 759948..
+0060  46 72 6f 6d 3a 20 22 44 68 72 75 76 22 20 3c 73   From: "Dhruv" <s
+0070  69 70 3a 64 68 72 75 76 40 79 61 68 6f 6f 2e 63   ip:dhruv@yahoo.c
+0080  6f 6d 3e 3b 20 74 61 67 3d 63 61 6c 6c 31 0d 0a   om>; tag=call1..
+0090  56 69 61 3a 20 53 49 50 2f 32 2e 30 2f 55 44 50   Via: SIP/2.0/UDP
+00a0  20 79 61 68 6f 6f 2e 63 6f 6d 20 3b 62 72 61 6e    yahoo.com ;bran
+00b0  63 68 3d 7a 39 68 47 34 62 4b 2d 31 31 31 31 31   ch=z9hG4bK-11111
+00c0  0d 0a 43 6f 6e 74 61 63 74 3a 20 3c 73 69 70 3a   ..Contact: <sip:
+00d0  31 39 32 2e 31 36 38 2e 31 2e 31 31 32 3e 0d 0a   192.168.1.112>..
+00e0  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+00f0  30 0d 0a 0d 0a                                    0....
+
+No.     Time           Source                Destination           Protocol Length Info
+   4164 120.421778000  172.17.19.222         172.17.19.62          SIP/SDP  555    Status: 200 OK | 
+
+Frame 4164: 555 bytes on wire (4440 bits), 555 bytes captured (4440 bits) on interface 3
+Ethernet II, Src: Cisco_eb:98:49 (d4:8c:b5:eb:98:49), Dst: LiteonTe_9f:14:e3 (ac:e0:10:9f:14:e3)
+Internet Protocol Version 4, Src: 172.17.19.222 (172.17.19.222), Dst: 172.17.19.62 (172.17.19.62)
+User Datagram Protocol, Src Port: 5060 (5060), Dst Port: 61271 (61271)
+    Source Port: 5060 (5060)
+    Destination Port: 61271 (61271)
+    Length: 521
+    Checksum: 0x6204 [validation disabled]
+    [Stream index: 242]
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+        [Request Frame: 4162]
+        [Response Time (ms): 4]
+    Message Header
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): user1 53655765 2353687637 IN IP6 [::1]
+            Session Name (s): -
+            Connection Information (c): IN IP6 ::1
+                Connection Network Type: IN
+                Connection Address Type: IP6
+                Connection Address: ::1
+            Time Description, active time (t): 0 0
+            Media Description, name and address (m): audio 6000 RTP/AVP 0
+            Media Attribute (a): rtpmap:0 PCMU/8000
+            Media Attribute (a): sendrecv
+            Media Description, name and address (m): video 6001 RTP/AVP 34
+            Media Attribute (a): rtpmap:34 h263/90000
+            Media Attribute (a): fmtp:34 QCIF=2
+            Media Attribute (a): sendrecv
+
+0000  ac e0 10 9f 14 e3 d4 8c b5 eb 98 49 08 00 45 00   ...........I..E.
+0010  02 1d 3b a2 40 00 3f 11 7e ef ac 11 13 de ac 11   ..;.@.?.~.......
+0020  13 3e 13 c4 ef 57 02 09 62 04 53 49 50 2f 32 2e   .>...W..b.SIP/2.
+0030  30 20 32 30 30 20 4f 4b 0d 0a 56 69 61 3a 20 53   0 200 OK..Via: S
+0040  49 50 2f 32 2e 30 2f 55 44 50 20 79 61 68 6f 6f   IP/2.0/UDP yahoo
+0050  2e 63 6f 6d 20 3b 62 72 61 6e 63 68 3d 7a 39 68   .com ;branch=z9h
+0060  47 34 62 4b 2d 31 31 31 31 31 0d 0a 46 72 6f 6d   G4bK-11111..From
+0070  3a 20 22 44 68 72 75 76 22 20 3c 73 69 70 3a 64   : "Dhruv" <sip:d
+0080  68 72 75 76 40 79 61 68 6f 6f 2e 63 6f 6d 3e 3b   hruv@yahoo.com>;
+0090  20 74 61 67 3d 63 61 6c 6c 31 0d 0a 54 6f 3a 20    tag=call1..To: 
+00a0  22 50 61 6c 6c 61 76 69 22 20 3c 73 69 70 3a 70   "Pallavi" <sip:p
+00b0  61 6c 6c 61 76 69 40 79 6d 61 69 6c 2e 63 6f 6d   allavi@ymail.com
+00c0  3e 3b 74 61 67 3d 33 30 32 36 53 49 50 70 54 61   >;tag=3026SIPpTa
+00d0  67 30 31 36 35 0d 0a 43 61 6c 6c 2d 49 44 3a 20   g0165..Call-ID: 
+00e0  37 35 39 39 34 38 0d 0a 43 53 65 71 3a 20 32 20   759948..CSeq: 2 
+00f0  49 4e 56 49 54 45 0d 0a 43 6f 6e 74 61 63 74 3a   INVITE..Contact:
+0100  20 3c 73 69 70 3a 5b 3a 3a 31 5d 3a 35 30 36 30    <sip:[::1]:5060
+0110  3b 74 72 61 6e 73 70 6f 72 74 3d 55 44 50 3e 0d   ;transport=UDP>.
+0120  0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61   .Content-Type: a
+0130  70 70 6c 69 63 61 74 69 6f 6e 2f 73 64 70 0d 0a   pplication/sdp..
+0140  43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20   Content-Length: 
+0150  20 20 32 31 32 0d 0a 0d 0a 76 3d 30 0d 0a 6f 3d     212....v=0..o=
+0160  75 73 65 72 31 20 35 33 36 35 35 37 36 35 20 32   user1 53655765 2
+0170  33 35 33 36 38 37 36 33 37 20 49 4e 20 49 50 36   353687637 IN IP6
+0180  20 5b 3a 3a 31 5d 0d 0a 73 3d 2d 0d 0a 63 3d 49    [::1]..s=-..c=I
+0190  4e 20 49 50 36 20 3a 3a 31 0d 0a 74 3d 30 20 30   N IP6 ::1..t=0 0
+01a0  0d 0a 6d 3d 61 75 64 69 6f 20 36 30 30 30 20 52   ..m=audio 6000 R
+01b0  54 50 2f 41 56 50 20 30 0d 0a 61 3d 72 74 70 6d   TP/AVP 0..a=rtpm
+01c0  61 70 3a 30 20 50 43 4d 55 2f 38 30 30 30 0d 0a   ap:0 PCMU/8000..
+01d0  61 3d 73 65 6e 64 72 65 63 76 0d 0a 6d 3d 76 69   a=sendrecv..m=vi
+01e0  64 65 6f 20 36 30 30 31 20 52 54 50 2f 41 56 50   deo 6001 RTP/AVP
+01f0  20 33 34 0d 0a 61 3d 72 74 70 6d 61 70 3a 33 34    34..a=rtpmap:34
+0200  20 68 32 36 33 2f 39 30 30 30 30 0d 0a 61 3d 66    h263/90000..a=f
+0210  6d 74 70 3a 33 34 20 51 43 49 46 3d 32 0d 0a 61   mtp:34 QCIF=2..a
+0220  3d 73 65 6e 64 72 65 63 76 0d 0a                  =sendrecv..
